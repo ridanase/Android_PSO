@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PSO_IMP</string>
+    <string name="hello_world">Optimization Visualization</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_2">PSO_IMP</string>
+    <string name="algo_prompt">Select Category</string>
+    <string name="title_activity_3">PSO_IMP</string>
+    <string name="input1">Number of Particles</string>
+    <string name="input2">Number of Dimensions</string>
+    <string name="input3">Number of Time Steps</string>
+    <string name="label1">Fitness Functions</string>
+    <string name="title_activity_4">PSO_IMP</string>
+    <string name="no_of_particle">Number of Particles</string>
+    <string name="no_of_dimensions">Number of Dimensions</string>
+    <string name="no_of_timesteps">Number of Time Steps</string>
+    <string name="title_activity_activity_5">PSO_IMP</string>
+    <string name="title_activity_5">Activity5</string>
+
+</resources>
+
