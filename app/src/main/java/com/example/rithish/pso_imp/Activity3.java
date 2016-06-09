@@ -1,6 +1,5 @@
 package com.example.rithish.pso_imp;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,12 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TableLayout;
-import android.widget.TextView;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class Activity3 extends Activity implements AdapterView.OnItemSelectedListener {
 
