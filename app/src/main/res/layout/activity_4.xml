@@ -16,45 +16,44 @@
         android:textSize="12pt"
         android:id="@+id/textView12"
         android:textColor="#3A211C"
+        android:layout_marginTop="49dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Np:"
-        android:id="@+id/textView13"
+        android:text="Number of Particles:"
+        android:id="@+id/np_text"
+        android:layout_marginTop="77dp"
         android:layout_below="@+id/textView12"
         android:layout_alignLeft="@+id/textView12"
-        android:layout_alignStart="@+id/textView12"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp"/>
+        android:layout_alignStart="@+id/textView12" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Nd:"
-        android:id="@+id/textView14"
-        android:layout_below="@+id/textView13"
-        android:layout_alignLeft="@+id/textView13"
-        android:layout_alignStart="@+id/textView13"
-        android:layout_marginTop="30dp" />
+        android:text="Number of Dimensions:"
+        android:id="@+id/nd_text"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/np_text"
+        android:layout_alignLeft="@+id/np_text"
+        android:layout_alignStart="@+id/np_text" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Nt:"
-        android:id="@+id/textView15"
-        android:layout_below="@+id/textView14"
-        android:layout_alignLeft="@+id/textView14"
-        android:layout_alignStart="@+id/textView14"
-        android:layout_marginTop="30dp" />
+        android:text="Number of Timesteps:"
+        android:id="@+id/nt_text"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/nd_text"
+        android:layout_alignLeft="@+id/nd_text"
+        android:layout_alignStart="@+id/nd_text" />
 
-    <TextView
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -85,39 +84,10 @@
         android:layout_below="@+id/textView17"
         android:layout_alignLeft="@+id/textView17"
         android:layout_alignStart="@+id/textView17"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="30dp" />-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/npValue"
-        android:layout_alignTop="@+id/textView13"
-        android:layout_marginRight="10dp"
-        android:layout_toRightOf="@+id/textView18"
-        android:layout_toEndOf="@+id/textView18" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/ndValue"
-        android:layout_alignTop="@+id/textView14"
-        android:layout_alignLeft="@+id/npValue"
-        android:layout_alignStart="@+id/npValue"
-        android:layout_marginRight="10dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/ntValue"
-        android:layout_alignTop="@+id/textView15"
-        android:layout_alignLeft="@+id/ndValue"
-        android:layout_alignStart="@+id/ndValue"
-        android:layout_marginRight="10dp"/>
-
-    <TextView
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -143,7 +113,7 @@
         android:id="@+id/chiValue"
         android:layout_alignTop="@+id/textView18"
         android:layout_alignLeft="@+id/c1Value"
-        android:layout_alignStart="@+id/c1Value" />
+        android:layout_alignStart="@+id/c1Value" />-->
 
     <Button
         android:layout_width="wrap_content"
@@ -154,4 +124,31 @@
         android:onClick="displayActivity"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/npValue"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBottom="@+id/np_text"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_alignEnd="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ndValue"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBottom="@+id/nd_text"
+        android:layout_alignLeft="@+id/npValue"
+        android:layout_alignStart="@+id/npValue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ntValue"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBottom="@+id/nt_text"
+        android:layout_alignLeft="@+id/ndValue"
+        android:layout_alignStart="@+id/ndValue" />
 </RelativeLayout>

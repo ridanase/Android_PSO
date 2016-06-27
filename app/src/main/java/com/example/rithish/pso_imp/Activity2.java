@@ -27,8 +27,8 @@ public class Activity2 extends Activity implements AdapterView.OnItemSelectedLis
         List <String> categories = new ArrayList <String>();
         categories.add("Select Category");
         categories.add("Particle Swarm Optimization");
-        categories.add("Algorithm_2");
-        categories.add("Algorithm_3");
+        //categories.add("Algorithm_2");
+        //categories.add("Algorithm_3");
 
         //Creating adapter for spinner
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, categories);
@@ -60,18 +60,17 @@ public class Activity2 extends Activity implements AdapterView.OnItemSelectedLis
                 intent = new Intent(Activity2.this, Activity3.class);
                 startActivity(intent);
                 break;
-            case 2:
+            /*case 2:
                 intent = new Intent(Activity2.this, Activity3.class);
                 startActivity(intent);
                 break;
             case 3:
                 intent = new Intent(Activity2.this, Activity3.class);
                 startActivity(intent);
-                break;
+                break;*/
         }
 
     }
-
     @Override
     public void onNothingSelected(AdapterView<?> parent)
     {

@@ -25,7 +25,7 @@ public class Activity4 extends Activity {
         TextView tv2 = (TextView)findViewById(R.id.ntValue);
         tv2.setTextColor(Color.RED);
         tv2.setText(bundle.getCharSequence("Nt_Value"));
-        TextView tv3 = (TextView)findViewById(R.id.c1Value);
+        /*TextView tv3 = (TextView)findViewById(R.id.c1Value);
         tv3.setTextColor(Color.RED);
         tv3.setText(bundle.getCharSequence("Con1_Value"));
         TextView tv4 = (TextView)findViewById(R.id.c2Value);
@@ -33,7 +33,7 @@ public class Activity4 extends Activity {
         tv4.setText(bundle.getCharSequence("Con2_Value"));
         TextView tv5 = (TextView)findViewById(R.id.chiValue);
         tv5.setTextColor(Color.RED);
-        tv5.setText(bundle.getCharSequence("Chi_Value"));
+        tv5.setText(bundle.getCharSequence("Chi_Value"));*/
     }
 
     public void displayActivity(View v)
