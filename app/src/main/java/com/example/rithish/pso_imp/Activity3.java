@@ -43,17 +43,6 @@ public class Activity3 extends Activity implements AdapterView.OnItemSelectedLis
 
         //Attaching Data adapter to spinner
         dropdown.setAdapter(adapter);
-
-        /*//Calculating the chi value.
-        double chi, phi, num1, num2;
-        EditText c1 = (EditText) findViewById(R.id.editText4);
-        EditText c2 = (EditText) findViewById(R.id.editText5);
-        EditText cons = (EditText) findViewById(R.id.editText6);
-        num1 = Double.parseDouble(c1.getText().toString());
-        num2 = Double.parseDouble(c2.getText().toString());
-        phi = num1 + num2;
-        chi = 2.0 / Math.abs(2.0 - phi - Math.sqrt(Math.pow(phi, 2) - 4 * phi));
-        cons.setText(Double.toString(chi));*/
     }
 
 
@@ -74,12 +63,6 @@ public class Activity3 extends Activity implements AdapterView.OnItemSelectedLis
         nd = n2.getText().toString();
         EditText n3 = (EditText)findViewById(R.id.editText3);
         nt = n3.getText().toString();
-        /*EditText c1 = (EditText)findViewById(R.id.editText4);
-        con1 = c1.getText().toString();
-        EditText c2 = (EditText)findViewById(R.id.editText5);
-        con2 = c2.getText().toString();
-        EditText ch = (EditText)findViewById(R.id.editText6);
-        chi = ch.getText().toString();*/
 
         switch(position)
         {
@@ -88,9 +71,6 @@ public class Activity3 extends Activity implements AdapterView.OnItemSelectedLis
                 bundle.putString("Np_Value", np);
                 bundle.putString("Nd_Value", nd);
                 bundle.putString("Nt_Value", nt);
-                /*bundle.putString("Con1_Value", con1);
-                bundle.putString("Con2_Value", con2);
-                bundle.putString("Chi_Value", chi);*/
                 Intent myIntent = new Intent(Activity3.this, Activity4.class);
                 myIntent.putExtras(bundle);
                 myIntent.putExtra("Code",position);
@@ -101,9 +81,6 @@ public class Activity3 extends Activity implements AdapterView.OnItemSelectedLis
                 bundle1.putString("Np_Value", np);
                 bundle1.putString("Nd_Value", nd);
                 bundle1.putString("Nt_Value", nt);
-                /*bundle1.putString("Con1_Value", con1);
-                bundle1.putString("Con2_Value", con2);
-                bundle1.putString("Chi_Value", chi);*/
                 Intent myIntent1 = new Intent(Activity3.this, Activity4.class);
                 myIntent1.putExtras(bundle1);
                 myIntent1.putExtra("Code",position);
@@ -114,9 +91,6 @@ public class Activity3 extends Activity implements AdapterView.OnItemSelectedLis
                 bundle2.putString("Np_Value", np);
                 bundle2.putString("Nd_Value", nd);
                 bundle2.putString("Nt_Value", nt);
-                /*bundle2.putString("Con1_Value", con1);
-                bundle2.putString("Con2_Value", con2);
-                bundle2.putString("Chi_Value", chi);*/
                 Intent myIntent2 = new Intent(Activity3.this, Activity4.class);
                 myIntent2.putExtras(bundle2);
                 myIntent2.putExtra("Code",position);
@@ -149,6 +123,5 @@ public class Activity3 extends Activity implements AdapterView.OnItemSelectedLis
     public void onNothingSelected(AdapterView<?> parent){
 
     }
-
 }
 

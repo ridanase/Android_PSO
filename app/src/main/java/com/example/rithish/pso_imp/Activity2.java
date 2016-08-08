@@ -25,7 +25,7 @@ public class Activity2 extends Activity implements AdapterView.OnItemSelectedLis
 
         //Spinner Drop down elements
         List <String> categories = new ArrayList <String>();
-        categories.add("Select Category");
+        categories.add("Select Algorithm");
         categories.add("Particle Swarm Optimization");
         //categories.add("Algorithm_2");
         //categories.add("Algorithm_3");
